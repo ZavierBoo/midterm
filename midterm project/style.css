@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #4a90e2; /* Navy blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #4a90e2;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ff6f61; /* Coral */
+}
+
+nav a {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Section Styling */
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.styled-button {
+    background-color: #50e3c2; /* Teal */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-button:hover {
+    background-color: #ff6f61; /* Coral */
+    transform: scale(1.05);
+}
+
+/* Main Content Styling */
+main {
+    padding: 1rem;
+}
+
+/* Styled Links */
+.styled-link {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 2px solid #007bff;
+}
+
+.styled-link:hover {
+    color: #007bff;
+}
+
+/* Button Styling */
+.styled-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.styled-button:hover {
+    background-color: #218838;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply Animation to Sections */
+section {
+    animation: fadeIn 0.6s ease-in-out;
+}
+/* Profile Picture Styling */
+.profile-pic {
+    width: 150px;          /* Set width of the image */
+    height: 150px;         /* Set height of the image */
+    border-radius: 50%;    /* Makes the image circular */
+    object-fit: cover;     /* Ensures image fits within circular frame */
+    margin: 10px auto;     /* Centers the image */
+    display: block;        /* Centers the image within a block layout */
+    border: 3px solid #50e3c2; /* Optional: Adds a border in a color */
+}
+/* Header Background Styling */
+header {
+    background-image: url('images/1-Background-Patterns-for-Websites.png'); /* Path to background image */
+    background-size: cover;            /* Ensures the image covers the entire header */
+    background-position: center;       /* Centers the background image */
+    color: #fff;                       /* Ensures text is readable */
+    padding: 60px 20px;                /* Adds padding for spacing */
+    text-align: center;                /* Centers the text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+}
